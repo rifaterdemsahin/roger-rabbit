@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roger Rabbit — Animation in the Real World</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #c0392b;
+    --card-bg: #f7f5f2;
+    --border: #e0ddd8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14120f;
+      --fg: #f2efe9;
+      --muted: #b8b2a8;
+      --accent: #e8735f;
+      --card-bg: #1f1c18;
+      --border: #35302a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  h1 {
+    font-size: 2.1rem;
+    margin-bottom: 0.25rem;
+  }
+  .subtitle {
+    color: var(--muted);
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+  }
+  p { color: var(--fg); }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1.25rem;
+  }
+  .card h3 {
+    margin-top: 0;
+    font-size: 1.05rem;
+  }
+  video, img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin-top: 0.75rem;
+    background: #000;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    background: var(--border);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    margin-top: 4rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Roger Rabbit — Animation in the Real World</h1>
+  <p class="subtitle">Blending live-action footage with cartoon-style animation, made with Google Flow.</p>
+
+  <h2>The Goal</h2>
+  <p>
+    <em>Who Framed Roger Rabbit</em> (1988) proved that hand-drawn "Toons" could convincingly share the
+    screen with live actors and the real world. This project explores whether today's AI video tools can
+    get us back to that same feeling — a real-world scene reimagined with the energy of classic cartoon
+    animation, in the spirit of both Roger Rabbit and the minimalist line-drawn style of
+    <a href="La_Linea.md">La Linea</a>.
+  </p>
+  <p>
+    The plan is to use <a href="https://labs.google/flow" target="_blank" rel="noopener">Google Flow</a>,
+    Google's AI filmmaking tool, to generate a short video that turns an ordinary live-action clip into
+    something that feels hand-animated — a modern, AI-assisted take on the toon-meets-reality trick that
+    made the original film groundbreaking.
+  </p>
+
+  <h2>The Example</h2>
+  <p>Here's a first pass: a plain live-action clip of someone typing, generated as a starting point for the animated treatment.</p>
+
+  <div class="card">
+    <span class="tag">Video</span>
+    <h3>Man typing on laptop</h3>
+    <video controls preload="metadata">
+      <source src="man-typing-on-laptop-line.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="card">
+    <span class="tag">Image</span>
+    <h3>Roger Rabbit trials</h3>
+    <img src="roger-rabbit-trials.png" alt="Roger Rabbit style trial frame">
+  </div>
+
+  <h2>Background Reading</h2>
+  <p>
+    See <a href="README.md">README.md</a> for more on the original <em>Who Framed Roger Rabbit</em> film,
+    and <a href="La_Linea.md">La_Linea.md</a> for the classic minimalist animation series that inspires the
+    line-drawn look.
+  </p>
+
+  <footer>
+    roger-rabbit — a small experiment in AI-assisted animation.
+  </footer>
+</div>
+</body>
+</html>
