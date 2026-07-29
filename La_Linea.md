@@ -1,8 +1,10 @@
-🔗 https://en.wikipedia.org/wiki/La_Linea_%28TV_series%29
+⬅️ [Back to roger-rabbit](README.md) · 🔗 [Wikipedia](https://en.wikipedia.org/wiki/La_Linea_%28TV_series%29)
 
 # 📏 La Linea ("The Line")
 
 > 🇮🇹 A cult-classic Italian animated short series created by cartoonist Osvaldo Cavandoli, featuring a minimalist character drawn as part of a single continuous infinite line.
+
+💡 **Why it's here:** La Linea is a reference point for the [roger-rabbit](README.md) project — proof that a huge amount of character and personality can come from the simplest possible line-drawn animation, minimal though it is.
 
 ---
 
